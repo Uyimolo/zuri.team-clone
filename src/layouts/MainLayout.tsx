@@ -3,7 +3,7 @@ import Header from "../components/Header"
 
 const MainLayout = () => {
   return (
-    <div className="px-14">
+    <div className="bg-snow overflow-x-hidden">
       <Header />
         <Outlet/>
         {/* footer */}
