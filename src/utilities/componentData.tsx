@@ -34,3 +34,37 @@ export const S4DownloadImpactTextData = {
   headingText: 'Download our Impact Report',
   highlightText: 'Performance',
 };
+
+export const S5TrainingOptionsCards = [
+  {
+    id: 1,
+    title: 'Software Development',
+    text: 'This option focuses on the practical side of software development, while we touch on the theoretical basis that form these concepts, our main focus is in actual applications. We offer several options including full-stack development using different languages or specialty in certain tracks. Either way, choosing us will be giving yourself the advantage over others.',
+    bgColorClass: 'bg-cornsilk',
+  },
+  {
+    id: 2,
+    title: 'Product (UI/UX) Design',
+    text: `This option exposes you to the ins-and-outs of true product design. Here, you'll understand the core values and research principles that backs actual product development. Beyond UI, We also teach you how to understand the needs of the users, professionally handle stakeholders and ensure your product considers the users perspective (UX). Choose this course if you have a passion for research and applicable of results.`,
+    bgColorClass: 'bg-maroon',
+  },
+  {
+    id: 3,
+    title: 'Continuous Development Training',
+    text: `If you are not a novice nor beginner, but wishes to keep improving on your skills by working on actual projects, CDT Gives you a chance to collaborate with others, add more projects to your portfolio and generally give you better work experience. The training runs in cycles of 3 months, and within each cycle, we ensure you build and complete at least 1 project.`,
+    bgColorClass: 'bg-thistle',
+  },
+];
+
+
+export const S6ExperiencedProfessionalsTextData = {
+  paragraphArray: [
+    `At Zuri, we are proud to have a team of professional and industry-experienced counselors and mentors who are committed to guiding and supporting our community. Our counselors bring a wealth of knowledge and expertise in various tech fields, ensuring that our members receive the best guidance and mentorship to navigate their career paths.
+`,
+    `Whether it's providing insights, sharing industry trends, or offering personalized advice, our counselors and mentors play a crucial role in empowering individuals to excel in their chosen tech professions.`,
+
+    'With their guidance, our members gain valuable insights, enhance their skills, and build the confidence needed to thrive in the tech industry.',
+  ],
+  headingText: 'Industry-Experienced counsellors and mentors.',
+  highlightText: 'Experienced Professional Trainers',
+};
