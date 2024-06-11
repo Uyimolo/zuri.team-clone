@@ -4,11 +4,12 @@ export default {
   theme: {
     extend: {
       screens: {
-        'xs': '480px',
+        xs: '480px',
         '2xl': '1440px',
       },
       colors: {
         snow: '#f5f0ee',
+        lightSnow: '#FCFAFA',
         maroon: '#410603',
         cornsilk: '#fff5d4',
         white: '#fff',

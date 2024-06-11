@@ -24,10 +24,21 @@ export interface ImageProps {
 export interface SectionTextProps {
   headingClassName?: string;
   paragraphClassName?: string;
-  buttonText: string;
+  highlightClassName?: string;
+  buttonText?: string;
+  buttonClassName?:string;
   sectionText:  {
-    paragraphArray: string[];
+    paragraphArray: string[] | null;
     headingText: string;
     highlightText: string;
 }
+}
+
+export type TestimonialProps = {
+  testimonialData: TestimonialData;
+};
+
+export interface TestimonialData {
+  testimonial: string;
+  name: string;
 }

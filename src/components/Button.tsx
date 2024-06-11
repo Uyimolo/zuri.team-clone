@@ -8,7 +8,7 @@ const Button = ({
   children,
   variant = 'primary',
   path = '',
-  animate = true,
+  animate = false,
 }: ButtonProps) => {
   let buttonStyles;
   if (variant === 'primary') {
