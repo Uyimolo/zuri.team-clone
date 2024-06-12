@@ -22,8 +22,8 @@ const LandingHero = () => {
             new possibilities.
           </Paragraph>
           <div className='flex space-x-4'>
-            <Button variant='primary'>Start Learning</Button>
-            <Button variant='outline'>Partner With Us</Button>
+            <Button variant='primary' animate>Start Learning</Button>
+            <Button variant='outline' animate>Partner With Us</Button>
           </div>
           <ZuriStatistics />
         </div>

@@ -5,7 +5,7 @@ const Paragraph = ({ className, children }: componentProps) => {
   return (
     <h1
       className={cn(
-        'text-[15px] tracking-tight md:text-[1vw] md:leading-[1.6vw] ',
+        'text-[15px] md:text-[1vw] md:leading-[1.6vw] ',
         className
       )}>
       {children}
