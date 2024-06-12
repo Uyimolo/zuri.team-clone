@@ -26,7 +26,7 @@ const S5TrainingOptions = () => {
             <div
               className={`w-full p-5 ${card.bgColorClass} ${
                 card.bgColorClass === 'bg-maroon' ? 'text-snow' : 'text-maroon'
-              } space-y-2 rounded-lg md:space-y-0 md:p-[1.45vw]`}
+              } space-y-2 rounded-lg shadow-xl md:space-y-0 md:p-[1.45vw]`}
               key={card.id}>
               {/* top */}
               <div className={`w-full md:relative`}>

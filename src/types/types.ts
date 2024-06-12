@@ -42,3 +42,7 @@ export interface TestimonialData {
   testimonial: string;
   name: string;
 }
+
+export interface logoProps {
+  variant: 'colored'| 'plain'
+}
