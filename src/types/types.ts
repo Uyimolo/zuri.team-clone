@@ -22,6 +22,7 @@ export interface ImageProps {
 }
 
 export interface SectionTextProps {
+  layoutClassName?: string;
   headingClassName?: string;
   paragraphClassName?: string;
   highlightClassName?: string;
@@ -43,6 +44,30 @@ export interface TestimonialData {
   name: string;
 }
 
-export interface logoProps {
+export interface LogoProps {
   variant: 'colored'| 'plain'
+}
+
+export type TrainingOptionsCardProps = {
+  card: TrainingOptionsCardData
+}
+
+export interface TrainingOptionsCardData {
+    id: number;
+    title: string;
+    text: string;
+    bgColorClass: string;
+}
+
+export interface RevealProps {
+  className?: string;
+    children: React.ReactNode;
+  variants:'slide left'| 'slide right' | 'slide up' | 'scale up';
+  delay?: number;
+}
+
+export interface RevealStaggerProps {
+  children: React.ReactNode;
+  className?: string;
+  staggerDelay?: number;
 }
