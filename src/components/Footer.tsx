@@ -27,9 +27,7 @@ const Footer = () => {
           <Reveal variants='slide up'>
             <Logo variant='plain' />
           </Reveal>
-          <Reveal variants='slide up'>
-            <FooterLinks />
-          </Reveal>
+          <FooterLinks />
         </div>
 
         <Reveal variants='slide up' delay={0.4}>
@@ -58,7 +56,7 @@ const Footer = () => {
       </GridLayout1>
 
       {/* -------DISCLAIMER--------- */}
-      <ColumnLayout className='pt-8 pb-12 md:pt-[4.5vw] md:pb-[7vw] md:grid-cols-1'>
+      <ColumnLayout className='pt-8 pb-12 md:pt-[4.5vw] md:pb-[7vw] overflow-hidden'>
         <Reveal variants='slide up'>
           <Paragraph className='text-snow text-[15px] text-center mx-auto'>
             DISCLAIMER: This website is a replica for educational and practice
