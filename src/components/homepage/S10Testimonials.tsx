@@ -15,16 +15,11 @@ const S10Testimonials = () => {
         highlightClassName='text-indianRed text-center'
         headingClassName='text-maroon text-center'
       />
+
       {/* ----TESTIMONIALS---- */}
       <div
         className='flex gap-6 items-stretch px-6 pb-6 w-fit md:gap-[2vw]'
         id='carousel'>
-        {S10TestimonialsTextData.map((testimonial) => (
-          <TestimonialCard
-            key={testimonial.name}
-            testimonialData={testimonial}
-          />
-        ))}
         {S10TestimonialsTextData.map((testimonial) => (
           <TestimonialCard
             key={testimonial.name}

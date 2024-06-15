@@ -2,43 +2,55 @@ import Paragraph from '../components/text/Paragraph';
 import Heading2 from '../components/text/Heading2';
 import { SectionTextProps } from '../types/types';
 import Button from '../components/Button';
+import { cn } from '../utilities/cn';
+import RevealStaggerControl from '../components/animation/RevealStaggerControl';
+import StaggeredReveal from '../components/animation/StaggeredReveal';
+import Reveal from '../components/animation/Reveal';
 
 const SectionTextLayout = ({
-  highlightClassName = 'text-indianRed',
-  headingClassName = 'text-maroon',
-  paragraphClassName = 'text-maroon',
+  layoutClassName = '',
+  highlightClassName = '',
+  headingClassName = '',
+  paragraphClassName = '',
   sectionText,
   buttonText,
-  buttonClassName
+  buttonClassName,
 }: SectionTextProps) => {
   return (
-    <div className='space-y-8 md:space-y-[2.2vw]'>
-      <div className='space-y-2 xs:space-y-4'>
+    <div
+      className={cn('space-y-8 md:space-y-[2.2vw]', layoutClassName)}>
+      <Reveal variants='slide up' className='space-y-2 xs:space-y-4'>
         {sectionText.highlightText && (
-          <Paragraph className={highlightClassName}>
+          <Paragraph className={cn('text-indianRed', highlightClassName)}>
             {sectionText.highlightText}
           </Paragraph>
         )}
         {sectionText.headingText && (
-          <Heading2 className={headingClassName}>
+          <Heading2 className={cn('text-maroon', headingClassName)}>
             {sectionText.headingText}
           </Heading2>
         )}
-      </div>
+      </Reveal>
       {/* ---body text--- */}
       {sectionText.paragraphArray && (
-        <div className='space-y-6 md:space-y-[1.6vw]'>
+        <RevealStaggerControl className='space-y-6 md:space-y-[1.6vw]'>
           {sectionText.paragraphArray.map((paragraph, index) => (
-            <Paragraph key={index} className={paragraphClassName}>
-              {paragraph}
-            </Paragraph>
+            <StaggeredReveal variants='slide up'>
+              <Paragraph
+                key={index}
+                className={cn('text-maroon', paragraphClassName)}>
+                {paragraph}
+              </Paragraph>
+            </StaggeredReveal>
           ))}
-        </div>
+        </RevealStaggerControl>
       )}
       {buttonText && (
-        <div>
-          <Button variant='primary' className={buttonClassName}>{buttonText}</Button>
-        </div>
+        <Reveal variants='slide up'>
+          <Button variant='primary' className={buttonClassName}>
+            {buttonText}
+          </Button>
+        </Reveal>
       )}
     </div>
   );
