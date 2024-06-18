@@ -1,10 +1,10 @@
-import { zuriStatisticsData } from '../utilities/zuriStatistics';
+import { ZuriStatisticsProps } from '../types/types';
 import Paragraph from './text/Paragraph';
 
-const ZuriStatistics = () => {
+const ZuriStatistics = ({data}:ZuriStatisticsProps) => {
   return (
     <div className='flex gap-6 items-stretch xs:gap-0'>
-      {zuriStatisticsData.map((data) => (
+      {data.map((data) => (
         <div
           key={data.title}
           className='flex flex-col justify-center space-y-2 xs:space-y-3 xs:border-r xs:border-maroon xs:last:border-r-0 first:xs:pl-0 xs:px-7 md:space-y-[.1vw]  md:px-[2.4vw] xl:space-y-[1vw]'>
