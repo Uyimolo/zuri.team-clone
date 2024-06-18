@@ -29,6 +29,7 @@ export interface SectionTextProps {
   highlightClassName?: string;
   buttonText?: string;
   buttonClassName?: string;
+  slideVariants?: string;
   sectionText: {
     paragraphArray?: string[] | null;
     headingText: string;

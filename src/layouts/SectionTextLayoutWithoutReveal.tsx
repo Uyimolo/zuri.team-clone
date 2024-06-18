@@ -3,23 +3,19 @@ import Heading2 from '../components/text/Heading2';
 import { SectionTextProps } from '../types/types';
 import Button from '../components/Button';
 import { cn } from '../utilities/cn';
-import RevealStaggerControl from '../components/animation/RevealStaggerControl';
-import StaggeredReveal from '../components/animation/StaggeredReveal';
-import Reveal from '../components/animation/Reveal';
 
-const SectionTextLayout = ({
+const SectionTextLayoutWithoutReveal = ({
   layoutClassName = '',
   highlightClassName = '',
   headingClassName = '',
   paragraphClassName = '',
   sectionText,
-buttonText,
+  buttonText,
   buttonClassName = '',
 }: SectionTextProps) => {
-
   return (
     <div className={cn('space-y-8 md:space-y-[2.2vw]', layoutClassName)}>
-      <Reveal variants='slide up' className='space-y-2 xs:space-y-4'>
+      <div className='space-y-2 xs:space-y-4'>
         {sectionText.highlightText && (
           <Paragraph className={cn('text-indianRed', highlightClassName)}>
             {sectionText.highlightText}
@@ -30,30 +26,30 @@ buttonText,
             {sectionText.headingText}
           </Heading2>
         )}
-      </Reveal>
+      </div>
       {/* ---body text--- */}
       {sectionText.paragraphArray && (
-        <RevealStaggerControl className='space-y-6 md:space-y-[1.6vw]'>
+        <div className='space-y-6 md:space-y-[1.6vw]'>
           {sectionText.paragraphArray.map((paragraph, index) => (
-            <StaggeredReveal variants='slide up'>
+            <div>
               <Paragraph
                 key={index}
                 className={cn('text-maroon', paragraphClassName)}>
                 {paragraph}
               </Paragraph>
-            </StaggeredReveal>
+            </div>
           ))}
-        </RevealStaggerControl>
+        </div>
       )}
       {buttonText && (
-        <Reveal variants='slide up'>
+        <div>
           <Button variant='primary' className={buttonClassName}>
             {buttonText}
           </Button>
-        </Reveal>
+        </div>
       )}
     </div>
   );
 };
 
-export default SectionTextLayout;
+export default SectionTextLayoutWithoutReveal;
