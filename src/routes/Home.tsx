@@ -1,5 +1,5 @@
 import LandingHero from '../components/homepage/LandingHero';
-import S10Testimonials from '../components/homepage/S10Testimonials';
+import S10Testimonials from '../components/shared/S10Testimonials';
 import S2TechInclusive from '../components/homepage/S2TechInclusive';
 import S3EnablingAfricans from '../components/homepage/S3EnablingAfricans';
 import S4DownloadImpact from '../components/homepage/S4DownloadImpact';
@@ -8,6 +8,7 @@ import S6ExperiencedProfessionals from '../components/homepage/S6ExperiencedProf
 import S7ZuriVideoIntro from '../components/homepage/S7ZuriVideoIntro';
 import S8HireZuriTalents from '../components/homepage/S8HireZuriTalents';
 import S9SupportTheMission from '../components/homepage/S9SupportTheMission';
+import FooterHeader from '../components/homepage/FooterHeader';
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <S8HireZuriTalents />
       <S9SupportTheMission />
       <S10Testimonials />
+      <FooterHeader />
     </main>
   );
 };

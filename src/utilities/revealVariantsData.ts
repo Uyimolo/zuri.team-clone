@@ -32,7 +32,7 @@
     },
   };
 
-  export const ScaleUpVariants = {
+  export const scaleUpVariants = {
     hidden: {
       scale: 0.5,
       opacity: 0,

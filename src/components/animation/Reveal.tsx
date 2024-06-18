@@ -1,7 +1,7 @@
 import { RevealProps } from '../../types/types';
 import { motion } from 'framer-motion';
 import {
-  ScaleUpVariants,
+  scaleUpVariants,
   slideLeftVariants,
   slideRightVariants,
   slideUpVariants,
@@ -25,7 +25,7 @@ const Reveal = ({
       revealVariants = slideLeftVariants;
       break;
     case 'scale up':
-      revealVariants = ScaleUpVariants;
+      revealVariants = scaleUpVariants;
       break;
     default:
       revealVariants = slideLeftVariants;
@@ -37,7 +37,7 @@ const Reveal = ({
       variants={revealVariants}
       initial={'hidden'}
       whileInView='visible'
-      transition={{ duration: 0.7, delay }}>
+      transition={{ duration: 0.5, delay }}>
       {children}
     </motion.div>
   );

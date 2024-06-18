@@ -16,7 +16,7 @@ const FooterNewsletter = () => {
 
         <Button
           variant='primary'
-          className='absolute top-1/2 -translate-y-1/2 right-1.5 py-[0.6rem] text-[10px] px-[1rem] font-light md:right-[0.75vw]'>
+          className='absolute top-1/2 -translate-y-1/2 right-1.5  text-[10px] py-[0.6rem] px-[1rem] xs:py-[0.65rem] font-light md:right-[0.75vw] '>
           Subscribe
         </Button>
       </div>

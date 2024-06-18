@@ -1,7 +1,7 @@
 import { RevealProps } from '../../types/types';
 import { motion } from 'framer-motion';
 import {
-  ScaleUpVariants,
+  scaleUpVariants,
   slideLeftVariants,
   slideRightVariants,
   slideUpVariants,
@@ -20,7 +20,7 @@ const StaggeredReveal = ({ children, className, variants }: RevealProps) => {
       revealVariants = slideLeftVariants;
       break;
     case 'scale up':
-      revealVariants = ScaleUpVariants;
+      revealVariants = scaleUpVariants;
       break;
     default:
       revealVariants = slideLeftVariants;
@@ -30,7 +30,7 @@ const StaggeredReveal = ({ children, className, variants }: RevealProps) => {
     <motion.div
       className={className}
       variants={revealVariants}
-      transition={{ duration: 0.7 }}>
+      transition={{ duration: 0.5 }}>
       {children}
     </motion.div>
   );

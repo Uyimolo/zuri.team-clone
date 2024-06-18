@@ -3,7 +3,6 @@ import divider from '../assets/images/divider-Pattern.svg';
 
 import Logo from './Logo';
 import FooterLinks from './FooterLinks';
-import FooterHeader from './FooterHeader';
 import FooterNewsletter from './FooterNewsletter';
 import Paragraph from './text/Paragraph';
 import twitter from '../assets/images/63e50a1a468efb786bf16f4f_2.svg';
@@ -15,10 +14,7 @@ import ColumnLayout from '../layouts/ColumnLayout';
 const Footer = () => {
   return (
     <section className='bg-maroon pt-1 md:pt-0 md:relative'>
-      <img src={divider} alt='' className='md:-top-3 md:absolute md:w-full ' />
-      <FooterHeader />
-
-      {/* -------BOTTOM CONTENT-------- */}
+      {/* -------- Top content ========= */}
       <GridLayout1 className='pb-8 md:pt-[9vw] md:pb-[4.5vw] relative md:grid-cols-[1fr,30%]'>
         <InnerFooterBorder className='border-t -top-10 md:top-[4vw]' />
 

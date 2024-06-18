@@ -134,7 +134,7 @@ export const S10TestimonialsTextData = [
   },
 ];
 
-export const footerTopTextData = {
+export const footerHeaderTextData = {
   highlightText: 'Join Us',
   headingText: 'Empowering African Youths Through Tech',
   paragraphArray: null,
@@ -202,3 +202,9 @@ export const footerLinks = [
     ],
   },
 ];
+
+export const s2TrustedOrganizationsTextData = {
+  headingText: 'Trusted by Top Organizations',
+  paragraphArray: null,
+  highlightText: 'Clients & Partners',
+};
