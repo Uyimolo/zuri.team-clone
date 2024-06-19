@@ -5,7 +5,7 @@ import S3EnablingAfricans from '../components/homepage/S3EnablingAfricans';
 import S4DownloadImpact from '../components/homepage/S4DownloadImpact';
 import S5TrainingOptions from '../components/homepage/S5TrainingOptions';
 import S6ExperiencedProfessionals from '../components/homepage/S6ExperiencedProfessionals';
-import S7ZuriVideoIntro from '../components/homepage/S7ZuriVideoIntro';
+import S7ZuriVideoIntro from '../components/shared/S7ZuriVideoIntro';
 import S8HireZuriTalents from '../components/homepage/S8HireZuriTalents';
 import S9SupportTheMission from '../components/homepage/S9SupportTheMission';
 import FooterHeader from '../components/homepage/FooterHeader';
