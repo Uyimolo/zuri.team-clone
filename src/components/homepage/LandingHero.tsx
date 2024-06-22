@@ -4,7 +4,7 @@ import boyWithLaptop from '../../assets/images/guy-with-laptop.webp';
 import Paragraph from '../text/Paragraph';
 import Button from '../Button';
 import HeroImage from '../shared/HeroImage';
-import ZuriStatistics from '../ZuriStatistics';
+import ZuriStatistics from '../shared/ZuriStatistics';
 import Reveal from '../animation/Reveal';
 
 import RevealStaggerControl from '../animation/RevealStaggerControl';

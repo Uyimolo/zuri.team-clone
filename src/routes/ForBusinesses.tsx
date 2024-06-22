@@ -1,4 +1,4 @@
-import FooterHeader from '../components/for-businesses/FooterHeader';
+import FooterHeader from '../components/shared/FooterHeader';
 import Hero from '../components/for-businesses/Hero';
 import S2TrustedOrganizations from '../components/for-businesses/S2TrustedOrganizations';
 import S3RecruitingTalent from '../components/for-businesses/S3RecruitingTalent';
@@ -6,7 +6,7 @@ import S4EngineeringTeam from '../components/for-businesses/S4EngineeringTeam';
 import S5TrainingPrograms from '../components/for-businesses/S5TrainingPrograms';
 import S6ExceptionalTrainees from '../components/for-businesses/S6ExceptionalTrainees';
 import S7DiscoverProfessionals from '../components/for-businesses/S7DiscoverProfessionals';
-import S8CareerTransitioners from '../components/for-businesses/S8CareerTransitioners';
+import S8CareerTransitioners from '../components/shared/S8CareerTransitioners';
 import S9Technologies from '../components/for-businesses/S9Technologies';
 import S10Testimonials from '../components/shared/S10Testimonials';
 

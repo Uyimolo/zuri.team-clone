@@ -5,6 +5,7 @@ import {
   slideLeftVariants,
   slideRightVariants,
   slideUpVariants,
+  rotateVariants,
 } from '../../utilities/revealVariantsData';
 const StaggeredReveal = ({ children, className, variants }: RevealProps) => {
   let revealVariants;
@@ -22,6 +23,9 @@ const StaggeredReveal = ({ children, className, variants }: RevealProps) => {
     case 'scale up':
       revealVariants = scaleUpVariants;
       break;
+    case 'rotate':
+      revealVariants = rotateVariants;
+      break;
     default:
       revealVariants = slideLeftVariants;
   }
@@ -30,7 +34,8 @@ const StaggeredReveal = ({ children, className, variants }: RevealProps) => {
     <motion.div
       className={className}
       variants={revealVariants}
-      transition={{ duration: 0.5 }}>
+      transition={{ duration: 0.5 }}
+    viewport={{once: true, amount: 0.2}}>
       {children}
     </motion.div>
   );

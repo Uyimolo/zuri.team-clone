@@ -1,9 +1,9 @@
 import GridLayout1 from '../../layouts/GridLayout1';
 import redBandanaLady from '../../assets/images/64904bdf4af603717c6a8f75_Frame 4004.webp';
-import SectionTextLayout from '../../layouts/SectionTextLayout';
 import { S6ExceptionalTraineesTextData } from '../../utilities/forBusinessesComponentData';
 import pattern from '../../assets/images/Pattern-2.svg';
 import Reveal from '../animation/Reveal';
+import SectionTextLayoutWithoutReveal from '../../layouts/SectionTextLayoutWithoutReveal';
 
 const S6ExceptionalTrainees = () => {
   return (
@@ -12,15 +12,14 @@ const S6ExceptionalTrainees = () => {
         <Reveal variants='slide right'>
           <img src={redBandanaLady} alt='Zuri trainee studying' />
         </Reveal>
-        <div className='space-y-6 md:space-y-[5vw]'>
-          <Reveal variants='slide left'>
-            <img src={pattern} alt='' className='w-[75%]' />
-          </Reveal>
-          <SectionTextLayout
+        <Reveal variants='slide left' className='space-y-6 md:space-y-[5vw]'>
+          <img src={pattern} alt='' className='w-[75%]' />
+
+          <SectionTextLayoutWithoutReveal
             sectionText={S6ExceptionalTraineesTextData}
             buttonText='Get started today'
           />
-        </div>
+        </Reveal>
       </GridLayout1>
     </section>
   );

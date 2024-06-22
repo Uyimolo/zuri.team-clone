@@ -1,7 +1,7 @@
 import dividerPattern from '../../assets/images/divider-Pattern.svg';
 import ColumnLayout from '../../layouts/ColumnLayout';
 import SectionTextLayout from '../../layouts/SectionTextLayout';
-import { s2TrustedOrganizationsTextData } from '../../utilities/componentData';
+import { s2TrustedOrganizationsTextData } from '../../utilities/forBusinessesComponentData';
 import { trustedOrganizationsData } from '../../utilities/trustedOrganizations';
 import Reveal from '../animation/Reveal';
 

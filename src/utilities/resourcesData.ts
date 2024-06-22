@@ -1,0 +1,152 @@
+export const resources = [
+  {
+    category: 'Recruiters',
+    date: 'January 10, 2022',
+    title: 'Hiring Made Easy',
+    text: "Discover how Zuri's tech training programs can provide you with top talent to fill your company's tech roles. Our training is designed to equip students with industry-relevant skills, making them job-ready.",
+  },
+  {
+    category: 'Talent',
+    date: 'March 15, 2022',
+    title: 'Unlock Your Potential',
+    text: "Take your career to the next level with Zuri's tech training. Our expert instructors and hands-on approach will help you gain the skills you need to succeed in the tech industry.",
+  },
+  {
+    category: 'Tips',
+    date: 'May 20, 2022',
+    title: 'Learning Paths',
+    text: "Maximize your learning with Zuri's structured learning paths. From beginner to advanced, our paths are designed to help you achieve your goals.",
+  },
+  {
+    category: 'Recruiters',
+    date: 'July 25, 2022',
+    title: 'Streamline Your Hiring Process',
+    text: "Zuri's tech training programs can help you find the right talent for your company. Our training focuses on industry-relevant skills, ensuring our graduates are job-ready.",
+  },
+  {
+    category: 'Talent',
+    date: 'September 1, 2022',
+    title: 'Career Transformation',
+    text: "Transform your career with Zuri's tech training. Our programs are designed to equip you with the skills you need to succeed in the tech industry.",
+  },
+  {
+    category: 'Tips',
+    date: 'November 10, 2022',
+    title: 'Practice Makes Perfect',
+    text: "Practice is key to mastering any skill. Zuri's tech training includes hands-on projects and exercises to help you gain practical experience.",
+  },
+  {
+    category: 'Recruiters',
+    date: 'January 5, 2023',
+    title: 'Diverse Talent Pool',
+    text: "Zuri's tech training attracts students from diverse backgrounds, ensuring a rich talent pool for Recruiters. Our training focuses on industry-relevant skills, making our graduates job-ready.",
+  },
+  {
+    category: 'Talent',
+    date: 'March 20, 2023',
+    title: 'Industry-Relevant Skills',
+    text: "Gain industry-relevant skills with Zuri's tech training. Our programs are designed to equip you with the skills you need to succeed in the tech industry.",
+  },
+  {
+    category: 'Tips',
+    date: 'May 15, 2023',
+    title: 'Learning Community',
+    text: "Join Zuri's learning community and connect with like-minded individuals. Our community is designed to support and motivate you throughout your learning journey.",
+  },
+  {
+    category: 'Recruiters',
+    date: 'July 10, 2023',
+    title: 'Cost-Effective Hiring',
+    text: "Zuri's tech training programs can help you find top talent while reducing hiring costs. Our training focuses on industry-relevant skills, ensuring our graduates are job-ready.",
+  },
+  {
+    category: 'Talent',
+    date: 'September 5, 2023',
+    title: 'Personalized Learning',
+    text: "Zuri's tech training offers personalized learning paths tailored to your needs. Our expert instructors will guide you every step of the way.",
+  },
+  {
+    category: 'Tips',
+    date: 'November 20, 2023',
+    title: 'Continuous Learning',
+    text: "Stay up-to-date with the latest industry trends and technologies with Zuri's continuous learning resources. Our training is designed to help you stay ahead in your career.",
+  },
+  {
+    category: 'Recruiters',
+    date: 'January 1, 2024',
+    title: 'Hiring Top Talent',
+    text: "Find top talent with Zuri's tech training programs. Our training focuses on industry-relevant skills, ensuring our graduates are job-ready and equipped to succeed in your company.",
+  },
+  {
+    category: 'Talent',
+    date: 'March 10, 2024',
+    title: 'Career Advancement',
+    text: "Advance your career with Zuri's tech training. Our programs are designed to equip you with the skills you need to succeed in the tech industry and take your career to the next level.",
+  },
+  {
+    category: 'Tips',
+    date: 'May 5, 2024',
+    title: 'Mentorship',
+    text: "Get guidance and support from industry experts with Zuri's mentorship program. Our mentors are dedicated to helping you achieve your career goals.",
+  },
+  {
+    category: 'Recruiters',
+    date: 'June 15, 2024',
+    title: 'Building a Strong Team',
+    text: "Zuri's tech training programs can help you build a strong team with the right skills and expertise. Our training focuses on industry-relevant skills, ensuring our graduates are job-ready.",
+  },
+  {
+    category: 'Talent',
+    date: 'August 10, 2024',
+    title: 'Unlocking Your Potential',
+    text: "Zuri's tech training programs are designed to help you unlock your potential and achieve your career goals. Our expert instructors and hands-on approach will guide you every step of the way.",
+  },
+  {
+    category: 'Tips',
+    date: 'October 1, 2024',
+    title: 'Staying Up-to-Date',
+    text: "Stay up-to-date with the latest industry trends and technologies with Zuri's continuous learning resources. Our training is designed to help you stay ahead in your career.",
+  },
+  {
+    category: 'Recruiters',
+    date: 'November 15, 2024',
+    title: 'Finding the Right Fit',
+    text: "Zuri's tech training programs can help you find the right fit for your company's tech roles. Our training focuses on industry-relevant skills, ensuring our graduates are job-ready and equipped to succeed.",
+  },
+  {
+    category: 'Talent',
+    date: 'December 10, 2024',
+    title: 'Career Growth',
+    text: "Zuri's tech training programs are designed to help you grow your career and achieve your goals. Our programs focus on industry-relevant skills, ensuring you're equipped to succeed in the tech industry.",
+  },
+  {
+    category: 'Tips',
+    date: 'January 5, 2025',
+    title: 'Learning from Experts',
+    text: "Learn from industry experts with Zuri's tech training programs. Our instructors have years of experience and are dedicated to helping you achieve your career goals.",
+  },
+  {
+    category: 'Recruiters',
+    date: 'February 15, 2025',
+    title: 'Streamlining the Hiring Process',
+    text: "Zuri's tech training programs can help streamline the hiring process for your company's tech roles. Our training focuses on industry-relevant skills, ensuring our graduates are job-ready.",
+  },
+  {
+    category: 'Talent',
+    date: 'March 15, 2025',
+    title: 'Achieving Success',
+    text: "Achieve success in your career with Zuri's tech training programs. Our programs are designed to equip you with the skills you need to succeed in the tech industry and take your career to the next level.",
+  },
+  {
+    category: 'Tips',
+    date: 'April 10, 2025',
+    title: 'Building a Professional Network',
+    text: "Build a professional network with Zuri's learning community. Connect with like-minded individuals and industry experts to advance your career.",
+  },
+];
+
+export const resourcesFilters = [
+  { filter: 'Recruiters', active: false },
+  { filter: 'Talent', active: false },
+  { filter: 'Tips', active: false },
+];

@@ -5,10 +5,10 @@ import divider from '../../assets/images/divider-Pattern.svg';
 
 const FooterHeader = () => {
   return (
-    <div className='md:border-b border-snow/30 relative bg-maroon'>
+    <section className='md:border-b border-snow/30 relative bg-maroon'>
       <img src={divider} alt='' className='md:-top-3 md:absolute md:w-full ' />
 
-      <GridLayout1 className='py-20 md:py-[6vw] md:grid-cols-1'>
+      <GridLayout1 className='pt-20 pb-10 md:pb-[3vw] md:pt-[6vw] md:grid-cols-1'>
         <SectionTextLayout
           sectionText={footerHeaderTextData}
           buttonText='Build Your Dream Team'
@@ -17,7 +17,7 @@ const FooterHeader = () => {
           buttonClassName='mx-auto w-fit'
         />
       </GridLayout1>
-    </div>
+    </section>
   );
 };
 

@@ -2,7 +2,7 @@ import SectionTextLayout from '../../layouts/SectionTextLayout';
 import { S7ZuriVideoIntroTextData } from '../../utilities/componentData';
 
 import ColumnLayout from '../../layouts/ColumnLayout';
-import IntroVideo from './IntroVideo';
+import IntroVideo from '../homepage/IntroVideo';
 import Reveal from '../animation/Reveal';
 
 const S7ZuriVideoIntro = () => {
