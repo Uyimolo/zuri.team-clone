@@ -7,6 +7,9 @@ import {
 import Button from '../Button';
 import Paragraph from '../text/Paragraph';
 import dividerPattern from '../../assets/images/divider-Pattern.svg';
+import RevealStaggerControl from '../animation/RevealStaggerControl';
+import StaggeredReveal from '../animation/StaggeredReveal';
+import Reveal from '../animation/Reveal';
 
 const S2EmpowerTraining = () => {
   return (
@@ -23,9 +26,12 @@ const S2EmpowerTraining = () => {
           highlightClassName='text-center'
         />
 
-        <div className='grid gap-5 md:grid-cols-3'>
+        <RevealStaggerControl className='grid gap-5 md:grid-cols-3'>
           {S2TrainingFeaturesTextData.map((card) => (
-            <div key={card.id} className='space-y-4 relative md:space-y-[1vw]'>
+            <StaggeredReveal
+              variants='scale up'
+              key={card.id}
+              className='space-y-4 relative md:space-y-[1vw]'>
               <Paragraph className='border border-indianRed text-snow rounded-full grid place-content-center w-8 aspect-square mx-auto md:w-[2.5vw]'>
                 {card.id.toString().padStart(2, '0')}
               </Paragraph>
@@ -37,10 +43,14 @@ const S2EmpowerTraining = () => {
               <Paragraph className='md:leading-[1.5vw] text-snow'>
                 {card.text}
               </Paragraph>
-            </div>
+            </StaggeredReveal>
           ))}
-        </div>
-        <Button variant='primary' className='mx-auto'>Get started today</Button>
+        </RevealStaggerControl>
+        <Reveal variants='slide up'>
+          <Button variant='primary' className='mx-auto'>
+            Get started today
+          </Button>
+        </Reveal>
       </ColumnLayout>
     </section>
   );

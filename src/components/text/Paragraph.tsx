@@ -1,15 +1,15 @@
 import { componentProps } from '../../types/types';
 import { cn } from '../../utilities/cn';
 
-const Paragraph = ({ className, children }: componentProps) => {
+const Paragraph = ({ className, children, onClick }: componentProps) => {
   return (
-    <h1
+    <p
       className={cn(
         'text-[0.97em] leading-6 md:text-[1vw] md:leading-[1.6vw] ',
         className
-      )}>
+      )} onClick={onClick}>
       {children}
-    </h1>
+    </p>
   );
 };
 

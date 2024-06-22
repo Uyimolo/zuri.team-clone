@@ -1,3 +1,8 @@
+export const s2TrustedOrganizationsTextData = {
+  headingText: 'Trusted by Top Organizations',
+  highlightText: 'Clients & Partners',
+};
+
 export const S3RecruitingTalentTextData = {
   paragraphArray: [
     {

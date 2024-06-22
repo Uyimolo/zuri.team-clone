@@ -1,6 +1,9 @@
+import { MouseEventHandler } from 'react';
+
 export type componentProps = {
   className?: string | undefined;
   children: React.ReactNode;
+  onClick?: MouseEventHandler<HTMLParagraphElement>;
 };
 
 export interface ButtonProps {
@@ -84,7 +87,7 @@ export interface TrainingOptionsCardData {
 export interface RevealProps {
   className?: string;
   children: React.ReactNode;
-  variants: 'slide left' | 'slide right' | 'slide up' | 'scale up';
+  variants: 'slide left' | 'slide right' | 'slide up' | 'scale up' | 'rotate';
   delay?: number;
 }
 
@@ -98,14 +101,51 @@ export interface ZuriStatisticsProps {
   data: ZuriStatisticsData[];
 }
 
+export interface ZuriStatisticsCount {
+  count: number;
+  title: string;
+}
+
 export interface ZuriStatisticsData {
   icon: string;
   count: number;
   title: string;
 }
 
-const x = 42
+export interface S4DownloadImpactProps {
+  className?: string;
+  textColor?: string;
+}
 
-if(x > 2) {
-  console.log('greater than')
+type filters = {
+  filter: string;
+  active: boolean;
+}[];
+
+export interface FiltersProps {
+  filters: filters | [];
+  setFilters: React.Dispatch<React.SetStateAction<filters>>;
+  searchTerm: string;
+  setSearchTerm: React.Dispatch<React.SetStateAction<string>>;
+}
+
+export interface ResourceProps {
+  resource: {
+    category: string;
+    date: string;
+    title: string;
+    text: string;
+  };
+}
+
+// interface Resource {
+//   category: string;
+//   date: string;
+//   title: string;
+//   text: string;
+// }
+
+export interface SearchProps {
+  setSearchTerm: React.Dispatch<React.SetStateAction<string>>;
+  searchTerm: string;
 }

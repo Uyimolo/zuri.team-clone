@@ -5,6 +5,7 @@ import {
   slideLeftVariants,
   slideRightVariants,
   slideUpVariants,
+  rotateVariants,
 } from '../../utilities/revealVariantsData';
 const Reveal = ({
   children,
@@ -27,6 +28,9 @@ const Reveal = ({
     case 'scale up':
       revealVariants = scaleUpVariants;
       break;
+    case 'rotate':
+      revealVariants = rotateVariants;
+      break;
     default:
       revealVariants = slideLeftVariants;
   }
@@ -37,7 +41,8 @@ const Reveal = ({
       variants={revealVariants}
       initial={'hidden'}
       whileInView='visible'
-      transition={{ duration: 0.5, delay }}>
+      transition={{ duration: 0.5, delay }}
+      viewport={{ amount: 0.2, once: true }}>
       {children}
     </motion.div>
   );

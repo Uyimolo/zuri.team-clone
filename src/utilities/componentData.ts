@@ -72,7 +72,6 @@ export const S7ZuriVideoIntroTextData = {
   highlightText: `We’re In The Business of Changing Lives`,
   headingText:
     'We are dedicated to transforming lives and making a lasting impact',
-  paragraphArray: null,
 };
 
 export const S8HireZuriTalentsTextData = {
@@ -137,7 +136,6 @@ export const S10TestimonialsTextData = [
 export const footerHeaderTextData = {
   highlightText: 'Join Us',
   headingText: 'Empowering African Youths Through Tech',
-  paragraphArray: null,
 };
 
 export const footerLinks = [
@@ -146,7 +144,7 @@ export const footerLinks = [
     links: [
       {
         name: 'For Business',
-        path: '/for-business',
+        path: '/for-businesses',
       },
       {
         name: 'For NGOS',
@@ -158,7 +156,7 @@ export const footerLinks = [
       },
       {
         name: 'Team',
-        Path: '/team',
+        path: '/team',
       },
     ],
   },
@@ -203,8 +201,4 @@ export const footerLinks = [
   },
 ];
 
-export const s2TrustedOrganizationsTextData = {
-  headingText: 'Trusted by Top Organizations',
-  paragraphArray: null,
-  highlightText: 'Clients & Partners',
-};
+
