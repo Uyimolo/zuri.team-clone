@@ -51,7 +51,7 @@ const Hero = () => {
           <HeroImage
             src={heroImage}
             alt='zuri backend/devOps Engineering student'
-            className='mx-auto max-w-[270px] xs:max-w-[300px] md:w-[27vw]'
+            className='mx-auto max-w-[270px] xs:max-w-[300px] md:w-[27vw] md:max-w-none'
           />
         </Reveal>
       </GridLayout1>

@@ -75,6 +75,7 @@ const Filters = ({
         <div className='space-y-5 md:flex md:space-y-0 md:gap-[2vw]'>
           {filters.map((filter) => (
             <button
+              tabIndex={0}
               className={cn(
                 'w-full border border-maroon h-12 text-sm rounded md:text-[1.1vw] md:h-[4.7vw] md:hover:text-[1.2vw]',
                 filter.active ? 'bg-maroon text-snow' : ''

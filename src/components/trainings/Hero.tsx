@@ -14,14 +14,15 @@ const Hero = () => {
     <section className='pt-8 pb-12 xs:pt-10 md:pt-0 md:pb-[6vw]'>
       <GridLayout1 className='w-full md:grid-cols-[1fr,39%] items-center'>
         <RevealStaggerControl className='space-y-6 md:space-y-[2.5vw] overflow-hidden'>
-          <div className='flex w-[20%] md:w-[15%]'>
+          <StaggeredReveal
+            variants='slide up'
+            className='flex w-[20%] md:w-[15%]'>
             <img src={wavy} alt='' className='w-full' />
             <img src={star} alt='' className='w-[50%]' />
-          </div>
+          </StaggeredReveal>
           <StaggeredReveal variants='slide up'>
             <Heading1 className=''>
-              Learn, Build, Grow,{' '}
-              <span className='text-indianRed'>Repeat</span>
+              Learn, Build, Grow, <span className='text-indianRed'>Repeat</span>
             </Heading1>
           </StaggeredReveal>
 
@@ -45,7 +46,7 @@ const Hero = () => {
           <HeroImage
             src={heroImage}
             alt='zuri backend/devOps Engineering student'
-            className='mx-auto max-w-[270px] xs:max-w-[300px] md:w-[28.7vw]'
+            className='mx-auto max-w-[270px] xs:max-w-[300px] md:w-[28.7vw] md:max-w-none'
           />
         </Reveal>
       </GridLayout1>
