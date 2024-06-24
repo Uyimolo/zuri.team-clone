@@ -16,8 +16,8 @@ const Resource = ({resource}: ResourceProps) => {
     <div className='space-y-3'>
       {/* top  */}
       <div className=' grid grid-cols-[auto,auto,1fr] gap-2 items-center'>
-        <p className={cn('text-[10px] text-maroon px-1.5 py-1 rounded-full min-w-10 text-center', categoryBgColorClass)}>{category}</p>
-        <p className='text-[11px] text-maroon'>{date}</p>
+        <p className={cn('text-[10px] text-maroon px-1.5 py-1 rounded-full min-w-10 text-center whitespace-nowrap', categoryBgColorClass)}>{category}</p>
+        <p className='text-[11px] text-maroon whitespace-nowrap'>{date}</p>
         <div className='h-[1px] w-full bg-maroon'></div>
       </div>
       <h3 className='text-maroon text-2xl font-semibold hover:underline'>{title}</h3>

@@ -12,14 +12,14 @@ const Resources = () => {
   const [displayedResources, setDisplayedResources] = useState(resources);
   const [categoryFilters, setCategoryFilters] = useState(resourcesFilters);
 
+  // function to filter resources by both category and search Term simultaneously
   const handleFilteredResources = useCallback(() => {
-    // get all active filters (filters with active property set to true)
     const activeFilters = categoryFilters.filter(
       (filterItem) => filterItem.active
     );
 
     // create an array of the names of active filters (to use as thumbnails and also in filtering resources by category)
-    const activeFilterArray = activeFilters.map(
+    const activeCategoryFilters = activeFilters.map(
       (filterItem) => filterItem.filter
     );
 
@@ -29,26 +29,25 @@ const Resources = () => {
       return;
     }
 
-    // filter resources by category
     const filteredByCategory = resources.filter((resource) =>
-      activeFilterArray.includes(resource.category)
+      activeCategoryFilters.includes(resource.category)
     );
 
-    let filteredBySearchTerm;
+    let results;
 
-    if (activeFilterArray.length > 0) {
-      // if a category filter is already applied, search through filteredByCategory array
-      filteredBySearchTerm = filteredByCategory.filter((item) =>
+    
+    if (activeCategoryFilters.length > 0) {
+      // if a category filter is already applied, search (searchTerm) through filteredByCategory array
+      results = filteredByCategory.filter((item) =>
         item.title.toLowerCase().includes(searchTerm.trim().toLowerCase())
       );
     } else {
       //if no filter is applied search through the main resources array
-      filteredBySearchTerm = resources.filter((item) =>
+      results = resources.filter((item) =>
         item.title.toLowerCase().includes(searchTerm.trim().toLowerCase())
       );
     }
 
-    const results = searchTerm ? filteredBySearchTerm : filteredByCategory;
     setDisplayedResources(results);
   }, [categoryFilters, searchTerm]);
 
