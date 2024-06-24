@@ -21,8 +21,11 @@ const S7HighDemandSkills = () => {
 
           <RevealStaggerControl className='grid grid-cols-2 gap-4 items-stretch '>
             {S7HighDemandSkillsList.map((skill) => (
-              <StaggeredReveal key={skill} variants='slide right'>
-                <Paragraph className='w-full bg-white h-auto grid items-center px-1.5 md:h-[4.2vw] md:px-[1vw]'>
+              <StaggeredReveal
+                key={skill}
+                variants='slide right'
+                className=' bg-white '>
+                <Paragraph className='w-full h-auto grid items-center px-1.5 md:px-[1vw]'>
                   {skill}
                 </Paragraph>
               </StaggeredReveal>

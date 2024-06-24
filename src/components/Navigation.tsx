@@ -35,7 +35,7 @@ const Navigation = ({
             : 0,
       }}
       transition={{ duration: 0.2, ease: 'easeInOut' }}
-      className=' grid absolute top-[5.3rem] left-0 w-full px-12 space-y-3 bg-maroon text-snow z-10 md:relative md:flex md:bg-transparent md:justify-between md:top-0 md:px-0 md:space-y-0 md:w-fit md:space-x-[5vw]'>
+      className=' grid absolute top-[5.3rem] left-0 w-full px-12 space-y-3 bg-maroon text-snow overflow-hidden z-10 md:relative md:flex md:bg-transparent md:justify-between md:top-0 md:px-0 md:space-y-0 md:w-fit md:overflow-visible md:space-x-[5vw]'>
       {/* ------ NAV ITEMS CONTAINER ------ */}
       <div className='flex flex-col items-center space-y-2 pt-6 md:flex-row md:p-0 md:space-y-0 md:space-x-[0.7vw]'>
         {navigationData.map((item, index) => {
