@@ -14,6 +14,16 @@ export interface ButtonProps {
   animate?: boolean;
 }
 
+type NavlinkItem = {
+  path: string;
+  name: string;
+};
+
+export interface NavLinkProps {
+  navLink: NavlinkItem;
+  setShowNavigationMenu: (value: boolean) => void;
+}
+
 export interface NavigationProps {
   showNavigationMenu: boolean;
   setShowNavigationMenu: (value: boolean) => void;

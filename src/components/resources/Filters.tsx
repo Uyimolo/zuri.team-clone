@@ -86,9 +86,9 @@ const Filters = ({
           ))}
         </div>
       </motion.div>
-      {/* active filter buttons  */}
+      {/* active filter buttons (thumbnails)  */}
       {
-        <div className='flex space-x-2 mt-4 md:mt-[2vw]'>
+        <div className='flex flex-wrap gap-2 mt-4 md:mt-[2vw]'>
           {/* show search term button along side other category filters */}
           {searchTerm && (
             <button
