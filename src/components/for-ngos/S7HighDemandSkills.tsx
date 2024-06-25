@@ -25,7 +25,7 @@ const S7HighDemandSkills = () => {
                 key={skill}
                 variants='slide right'
                 className=' bg-white '>
-                <Paragraph className='w-full h-auto grid items-center px-1.5 md:px-[1vw]'>
+                <Paragraph className='w-full h-auto min-h-12 grid items-center px-1.5 md:px-[1vw] md:min-h-[3.5vw]'>
                   {skill}
                 </Paragraph>
               </StaggeredReveal>
